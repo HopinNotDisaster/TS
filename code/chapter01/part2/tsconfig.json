@@ -1,0 +1,56 @@
+{
+    /* 
+    tsconfig.json是ts编辑器的配置文件，ts编辑器可以根据它的信息来进行编辑！
+
+    include,exclude,
+
+*/
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [],
+    "compilerOptions": {
+
+        // "target":"ES3"      是用来指定ts被编译为指定的ES版本！
+        // 下面是可以选择的几个！
+        // 'es5', 'es6', 'es2015', 'es2016', 'es2017', 'es2018', 'es2019', 'es2020', 'es2021', 'es2022', 'esnext'
+        // 给出一个错误的值，就可以看到可以填入哪些正确的值！
+        // "module": "es2015"   指名要使用的模块化规范！
+
+        // lib
+
+
+        "outDir": "./dist",
+        // 设置outFile之后，所有的全局作用域中的代码会合并到同一个文件中。
+        // "outFile":
+
+
+
+        "allowJs": true,
+        "checkJs": true,
+        "removeComments": true, // 是否移除注释！
+
+
+
+
+        // "noEmit"  是否生成js文件
+        "noEmitOnError":  true,
+        // 当有错误时不生成js文件
+
+        // 编译之后的文件是否要严格模式！
+        "alwaysStrict": true,
+
+        // 有模块导入的话，自动进行严格模式！
+
+         "noImplicitAny": true,
+        //  不允许出现隐式any
+        "noImplicitThis":true, // 不允许不明确类型的this 
+    
+        "strictNullChecks": true,
+
+
+        // 所有严格检查的总开关！
+        "strict": true,
+    
+    }
+}
