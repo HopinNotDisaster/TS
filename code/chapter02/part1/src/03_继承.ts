@@ -1,0 +1,3 @@
+//  extends
+//  ocp原则！
+
